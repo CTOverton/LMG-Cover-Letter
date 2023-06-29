@@ -1,7 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter'
+})
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
 
 export const metadata = {
   title: 'Christian Overton',
@@ -15,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${montserrat.variable}`}>{children}</body>
     </html>
   )
 }
