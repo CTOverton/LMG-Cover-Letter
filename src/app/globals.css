@@ -2,7 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+html,
 body {
+    max-width: 100vw;
+
+    @apply font-sans
+}
+
+@layer components {
+    .text-display {
+        @apply text-[2.5rem] sm:text-[4rem] font-black font-display leading-none;
+    }
+
+    .text-display-2 {
+        @apply text-[2rem] sm:text-[3rem] font-black font-display;
+    }
+
+    .text-display-3 {
+        @apply text-[1rem] sm:text-[2rem] font-bold font-display;
+    }
+
+    .text-subtitle {
+        @apply text-[1rem] sm:text-[1.5rem] font-medium font-sans;
+    }
+
+    .text-btn {
+        @apply text-[1rem] sm:text-[1rem] font-black font-display;
+    }
+
+
 
 }
