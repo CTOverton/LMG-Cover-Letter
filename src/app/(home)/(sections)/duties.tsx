@@ -3,7 +3,7 @@ import React from 'react'
 import { Highlight } from '@/components/highlight'
 import { useDutiesAnimation } from '@/hooks/useDutiesAnimation'
 import { Animated } from '@/components/animatedComponent'
-import { fadeAnimation, openAnimation } from '@/animations/fadeAnimation'
+import { fadeAnimation, openAnimation } from '@/animations/animations'
 import { ComponentShowcase } from '@/app/(home)/(sections)/(components)/componentShowcase'
 import { ExternalLink } from '@/components/externalLink'
 
