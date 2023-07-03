@@ -22,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${montserrat.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${montserrat.variable}`}>
+        {children}
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@1.6.0/dist/lottie-player.js"></script>
+      </body>
     </html>
   )
 }
