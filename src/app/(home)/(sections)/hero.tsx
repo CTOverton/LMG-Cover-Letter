@@ -1,6 +1,7 @@
 import { ParallaxText } from '@/components/parallaxText'
 import { Button } from '@/components/button'
 import { ICONS } from '@/config/icons'
+import { LINKS } from '@/config/links'
 
 export const HeroSection = () => {
   return (
@@ -20,10 +21,7 @@ export const HeroSection = () => {
           Otherwise they are just words on paper
         </h1>
 
-        <a
-          href={'https://github.com/CTOverton/LMG-Cover-Letter'}
-          target={'_blank'}
-        >
+        <a href={LINKS.GITHUB.REPO} target={'_blank'}>
           <Button className={'mx-auto'} leftIcon={ICONS.GITHUB}>
             View source code
           </Button>

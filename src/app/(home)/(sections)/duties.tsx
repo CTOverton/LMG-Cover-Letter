@@ -6,6 +6,7 @@ import { Animated } from '@/components/animatedComponent'
 import { fadeAnimation, openAnimation } from '@/animations/animations'
 import { ComponentShowcase } from '@/app/(home)/(sections)/(components)/componentShowcase'
 import { ExternalLink } from '@/components/externalLink'
+import { LINKS } from '@/config/links'
 
 export const DutiesSection = () => {
   const { scrollRef, isOpen } = useDutiesAnimation()
@@ -52,7 +53,7 @@ const PrimaryContent = () => (
 
     <ComponentShowcase />
 
-    <ExternalLink href={'https://github.com'}>
+    <ExternalLink href={LINKS.GITHUB.COMPONENTS}>
       View the components I built for this website <Highlight>here</Highlight>
     </ExternalLink>
   </div>

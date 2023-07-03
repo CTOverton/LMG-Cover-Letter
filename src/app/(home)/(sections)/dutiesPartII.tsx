@@ -3,6 +3,7 @@ import { Highlight } from '@/components/highlight'
 import { JourneyShield } from '@/components/journeyShield'
 import { IMAGES } from '@/config/images'
 import { ExternalLink } from '@/components/externalLink'
+import { LINKS } from '@/config/links'
 
 export const DutiesPartIISection = () => {
   return (
@@ -99,7 +100,7 @@ const Section1 = () => (
           alt={''}
         />
 
-        <ExternalLink href={'https://empoweredtogether.us/'}>
+        <ExternalLink href={LINKS.EMPOWERED_TOGETHER}>
           See how I achieved this score for{' '}
           <Highlight>EmpoweredTogether.us</Highlight>
         </ExternalLink>
@@ -169,7 +170,7 @@ const Section2 = () => (
             can come together to learn and grow.
           </p>
 
-          <ExternalLink href={'https://discord.gg/8T57kxV2aJ'}>
+          <ExternalLink href={LINKS.DISCORD}>
             Find it on <Highlight>discord</Highlight>
           </ExternalLink>
         </div>

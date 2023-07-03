@@ -1,6 +1,7 @@
 import { Highlight } from '@/components/highlight'
 import { Button } from '@/components/button'
 import { ICONS } from '@/config/icons'
+import { LINKS } from '@/config/links'
 
 export const PlaceholderSection = () => {
   return (
@@ -19,10 +20,7 @@ export const PlaceholderSection = () => {
         <h3 className={'text-display-3 mb-8'}>
           Thank you for taking the time to view my work
         </h3>
-        <a
-          href="https://calendly.com/blueprintsoftware/lmg-floatplane-interview"
-          target={'_blank'}
-        >
+        <a href={LINKS.CALENDLY} target={'_blank'}>
           <Button
             className={'mx-auto mb-2'}
             leftIcon={ICONS.CALENDAR}
